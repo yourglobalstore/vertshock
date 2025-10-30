@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vert Shock - Increase Your Vertical Jump Fast</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17676368282"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17676368282');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      overflow: hidden;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .hero {
+      height: 100vh;
+      width: 100%;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://i.imgur.com/ElONnIE.jpeg')
+        center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 5vw;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      max-width: 900px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+      color: #ffcc00;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 3vw, 1.3rem);
+      max-width: 750px;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      color: #fff;
+    }
+
+    /* COOKIE BANNER */
+    .cookie-banner {
+      position: fixed;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.9);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      max-width: 480px;
+      width: 90%;
+      box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+      z-index: 9999;
+      animation: fadeIn 1s ease;
+      display: none;
+    }
+
+    .cookie-banner p {
+      margin-bottom: 15px;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      color: #f2f2f2;
+      line-height: 1.4;
+    }
+
+    .cookie-banner button#acceptCookies {
+      background: #ffcc00;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 14px 32px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .cookie-banner button#acceptCookies:hover {
+      background: #ffd633;
+      transform: scale(1.05);
+    }
+
+    /* BOTÃO DE FECHAR (X) */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      background: #ffcc00;
+      border: none;
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      line-height: 20px;
+      text-align: center;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .close-btn:hover {
+      background: #ffd633;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, 20px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 0 10px;
+        justify-content: center;
+      }
+
+      .cookie-banner {
+        bottom: 30px;
+        padding: 25px 20px 15px 20px;
+        max-width: 95%;
+      }
+
+      .close-btn {
+        top: 8px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 0.8rem;
+      }
+
+      .cookie-banner button#acceptCookies {
+        padding: 12px 28px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .hero h1 {
+        font-size: 3.2rem;
+      }
+      .hero p {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Unleash Your Athletic Power with Vert Shock</h1>
+    <p>Join thousands of athletes who have added up to 9 inches to their vertical jump using this proven, science-based training system. No weights. No gym. Just results.</p>
+  </section>
+
+  <!-- COOKIE CONSENT -->
+  <div class="cookie-banner" id="cookieBanner">
+    <button class="close-btn" id="closeBanner" aria-label="Close cookie consent banner">✕</button>
+    <p>We use cookies to enhance your experience. Continue to discover how Vert Shock is helping athletes reach new heights — literally.</p>
+    <button id="acceptCookies">Continue</button>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    const affiliateLink = "https://d71c9fsbnt9nat69f0o5scu5u3.hop.clickbank.net";
+
+    setTimeout(() => {
+      document.getElementById('cookieBanner').style.display = 'block';
+    }, 3000);
+
+    document.getElementById('acceptCookies').addEventListener('click', function() {
+      window.location.href = affiliateLink;
+    });
+
+    document.getElementById('closeBanner').addEventListener('click', function() {
+      window.location.href = affiliateLink;
+    });
+  </script>
+
+</body>
+</html>
