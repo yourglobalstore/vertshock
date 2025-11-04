@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vert Shock - Increase Your Vertical Jump Fast</title>
+
+  <title>Vert Shock - How to Increase Your Vertical Jump Fast</title>
+  <meta name="description" content="Discover how Vert Shock helps athletes increase vertical jump fast — no weights, no gym, just science-based results that boost your dunk power.">
+  <meta name="keywords" content="Vert Shock, Increase Vertical Jump, Jump Training Program, Dunk Higher, Plyometric Training, Basketball Jump System, Adam Folker">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Vert Shock - Increase Your Vertical Jump Fast">
+  <meta property="og:description" content="Boost your vertical jump with Vert Shock — the proven 8-week system trusted by athletes worldwide. No weights, just results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:image" content="https://i.imgur.com/ElONnIE.jpeg">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17676368282"></script>
-  <script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -29,9 +38,8 @@
       font-family: 'Helvetica Neue', Arial, sans-serif;
       background: #000;
       color: #fff;
-      overflow: hidden;
-      height: 100vh;
       width: 100%;
+      overflow-x: hidden;
     }
 
     .hero {
@@ -39,8 +47,7 @@
       width: 100%;
       background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://i.imgur.com/ElONnIE.jpeg')
-        center/cover no-repeat;
+        url('https://i.imgur.com/ElONnIE.jpeg') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -110,7 +117,7 @@
       transform: scale(1.05);
     }
 
-    /* BOTÃO DE FECHAR (X) */
+    /* CLOSE BUTTON */
     .close-btn {
       position: absolute;
       top: 10px;
@@ -135,7 +142,7 @@
       transform: scale(1.1);
     }
 
-    /* LOADING SCREEN */
+    /* LOADING OVERLAY */
     .loading-overlay {
       display: none;
       position: fixed;
@@ -147,7 +154,6 @@
       color: #ffcc00;
       font-size: 1.5rem;
       font-weight: bold;
-      display: flex;
       justify-content: center;
       align-items: center;
       z-index: 10000;
@@ -164,47 +170,20 @@
       margin-bottom: 20px;
     }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translate(-50%, 20px); }
-      to { opacity: 1; transform: translate(-50%, 0); }
+    /* HIDDEN SEO ARTICLE */
+    .seo-article {
+      display: none;
+      visibility: hidden;
     }
 
     @media (max-width: 768px) {
-      .hero {
-        padding: 0 10px;
-        justify-content: center;
-      }
-
-      .cookie-banner {
-        bottom: 30px;
-        padding: 25px 20px 15px 20px;
-        max-width: 95%;
-      }
-
-      .close-btn {
-        top: 8px;
-        right: 10px;
-        width: 20px;
-        height: 20px;
-        font-size: 0.8rem;
-      }
-
-      .cookie-banner button#acceptCookies {
-        padding: 12px 28px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .hero h1 {
-        font-size: 3.2rem;
-      }
-      .hero p {
-        font-size: 1.4rem;
-      }
+      .hero { padding: 0 10px; justify-content: center; }
+      .cookie-banner { bottom: 30px; padding: 25px 20px 15px 20px; max-width: 95%; }
+      .close-btn { top: 8px; right: 10px; width: 20px; height: 20px; font-size: 0.8rem; }
+      .cookie-banner button#acceptCookies { padding: 12px 28px; }
     }
   </style>
 </head>
@@ -212,14 +191,14 @@
 
   <!-- HERO SECTION -->
   <section class="hero">
-    <h1>Unleash Your Athletic Power with Vert Shock</h1>
-    <p>Join thousands of athletes who have added up to 9 inches to their vertical jump using this proven, science-based training system. No weights. No gym. Just results.</p>
+    <h1>Unleash Your Jump Power with Vert Shock</h1>
+    <p>Discover the revolutionary 8-week system that increases your vertical jump by up to 9 inches — no weights, no gym, just results.</p>
   </section>
 
   <!-- COOKIE CONSENT -->
   <div class="cookie-banner" id="cookieBanner">
     <button class="close-btn" id="closeBanner" aria-label="Close cookie consent banner">✕</button>
-    <p>We use cookies to enhance your experience. Continue to discover how Vert Shock is helping athletes reach new heights — literally.</p>
+    <p>We use cookies to give you the best experience. Continue to learn how Vert Shock helps athletes dominate their game.</p>
     <button id="acceptCookies">Continue</button>
   </div>
 
@@ -229,24 +208,42 @@
     <p>Loading... Please wait</p>
   </div>
 
+  <!-- INVISIBLE SEO ARTICLE -->
+  <div class="seo-article">
+    <h2>Vert Shock: The Ultimate Vertical Jump Training System</h2>
+    <p>Vert Shock is a proven plyometric-based program designed to help athletes increase their vertical jump without lifting heavy weights. Developed by professional trainer Adam Folker, it uses neuromuscular activation techniques that target fast-twitch muscle fibers for explosive power.</p>
+    <p>Unlike traditional strength training, Vert Shock focuses on shock training and bodyweight movements to boost vertical performance naturally. Thousands of athletes worldwide have reported gains of 6–9 inches or more within 8 weeks.</p>
+    <h3>How Vert Shock Works</h3>
+    <ul>
+      <li>Activates fast-twitch muscle fibers for explosive lift-off.</li>
+      <li>Improves jump mechanics and body control.</li>
+      <li>Increases elasticity and tendon responsiveness.</li>
+      <li>Enhances overall athleticism and coordination.</li>
+    </ul>
+    <h3>Why It’s Effective</h3>
+    <p>The program is based on plyometric progression and science-backed principles used by professional basketball players and trainers. It does not require gym access — all exercises can be done at home using bodyweight only.</p>
+    <p>If you want to dunk, spike higher, or simply become more explosive, Vert Shock remains the leading solution for vertical jump development.</p>
+  </div>
+
   <!-- SCRIPT -->
   <script>
     const affiliateLink = "https://d71c9fsbnt9nat69f0o5scu5u3.hop.clickbank.net";
+    const cookieBanner = document.getElementById('cookieBanner');
+    const loadingOverlay = document.getElementById('loadingOverlay');
 
-    setTimeout(() => {
-      document.getElementById('cookieBanner').style.display = 'block';
-    }, 3000);
+    // Show banner after 3 seconds
+    setTimeout(() => { cookieBanner.style.display = 'block'; }, 3000);
 
-    const showLoadingAndRedirect = () => {
-      const overlay = document.getElementById('loadingOverlay');
-      overlay.style.display = 'flex';
-      setTimeout(() => {
-        window.location.href = affiliateLink;
-      }, 1000);
-    };
+    // Show loading + redirect on accept
+    document.getElementById('acceptCookies').addEventListener('click', () => {
+      loadingOverlay.style.display = 'flex';
+      setTimeout(() => { window.location.href = affiliateLink; }, 1000);
+    });
 
-    document.getElementById('acceptCookies').addEventListener('click', showLoadingAndRedirect);
-    document.getElementById('closeBanner').addEventListener('click', showLoadingAndRedirect);
+    // Close banner without redirect
+    document.getElementById('closeBanner').addEventListener('click', () => {
+      cookieBanner.style.display = 'none';
+    });
   </script>
 
 </body>
