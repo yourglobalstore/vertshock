@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Vert Shock - How to Increase Your Vertical Jump Fast</title>
-  <meta name="description" content="Discover how Vert Shock helps athletes increase vertical jump fast — no weights, no gym, just science-based results that boost your dunk power.">
-  <meta name="keywords" content="Vert Shock, Increase Vertical Jump, Jump Training Program, Dunk Higher, Plyometric Training, Basketball Jump System, Adam Folker">
+  <title>Vert Shock - Increase Your Vertical Jump Fast</title>
+  <meta name="description" content="Boost your vertical jump by up to 9 inches with Vert Shock — trusted by athletes worldwide. No gym, no weights, just explosive results.">
+  <meta name="keywords" content="Vert Shock, Vertical Jump, Jump Training, Dunk Higher, Basketball, Adam Folker">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Vert Shock - Increase Your Vertical Jump Fast">
-  <meta property="og:description" content="Boost your vertical jump with Vert Shock — the proven 8-week system trusted by athletes worldwide. No weights, just results.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:title" content="Vert Shock - Jump Higher, Dominate the Game">
+  <meta property="og:description" content="Unlock your jump power with the 8-week system trusted by pros.">
   <meta property="og:image" content="https://i.imgur.com/hwVEUyE.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourglobalstore.github.io/vertshock/">
 
   <!-- Meta Pixel Code -->
   <script>
@@ -26,7 +25,7 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1373449367818760');
   fbq('track', 'PageView');
-  fbq('track', 'ViewContent'); // <-- Adicionado para rastrear visualização da página
+  fbq('track', 'ViewContent');
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1373449367818760&ev=PageView&noscript=1"
@@ -50,130 +49,84 @@
       background: #000; color: #fff; width: 100%; overflow-x: hidden;
     }
     .hero {
-      height: 100vh; width: 100%;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.imgur.com/hwVEUyE.jpeg') center/cover no-repeat;
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://i.imgur.com/hwVEUyE.jpeg') center/cover no-repeat;
       display: flex; flex-direction: column; justify-content: center; align-items: center;
       text-align: center; padding: 0 5vw;
     }
     .hero h1 {
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      max-width: 900px; line-height: 1.3; margin-bottom: 20px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.8); color: #ffcc00;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+      margin-bottom: 20px; max-width: 850px; line-height: 1.3;
     }
     .hero p {
       font-size: clamp(1rem, 3vw, 1.3rem);
-      max-width: 750px; margin-bottom: 40px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7); color: #fff;
+      color: #f5f5f5; max-width: 750px; margin-bottom: 35px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
-    .old-price {
-      text-decoration: line-through;
-      color: #bbb;
-      font-weight: normal;
-      margin-right: 8px;
+    .cta-btn {
+      background: #ffcc00; color: #000; font-weight: bold;
+      border: none; padding: 16px 40px; border-radius: 35px;
+      font-size: 1.1rem; cursor: pointer; transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(255, 204, 0, 0.3);
     }
-    .new-price {
-      color: #ffcc00;
-      font-weight: normal;
-    }
-
-    .cookie-banner {
-      position: fixed; bottom: 5%; left: 50%; transform: translateX(-50%);
-      background: rgba(0,0,0,0.9); border-radius: 15px; padding: 30px;
-      text-align: center; max-width: 480px; width: 90%;
-      box-shadow: 0 4px 15px rgba(255,255,255,0.2);
-      z-index: 9999; animation: fadeIn 1s ease; display: none;
-    }
-    .cookie-banner p { margin-bottom: 15px; font-size: clamp(0.9rem, 2vw, 1rem); color: #f2f2f2; line-height: 1.4; }
-    .cookie-banner button#acceptCookies {
-      background: #ffcc00; border: none; color: #000; font-weight: bold;
-      border-radius: 30px; padding: 14px 32px; cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
-      width: 100%; max-width: 250px;
-    }
-    .cookie-banner button#acceptCookies:hover {
+    .cta-btn:hover {
       background: #ffd633; transform: scale(1.05);
     }
-    .close-btn {
-      position: absolute; top: 10px; right: 12px; background: #ffcc00; border: none; color: #000;
-      font-size: 0.85rem; font-weight: bold; border-radius: 50%;
-      width: 22px; height: 22px; cursor: pointer; line-height: 20px; text-align: center;
-      transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    .section {
+      padding: 60px 20px; text-align: center;
     }
-    .close-btn:hover { background: #ffd633; transform: scale(1.1); }
-
-    .loading-overlay {
-      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.95); color: #ffcc00; font-size: 1.5rem; font-weight: bold;
-      justify-content: center; align-items: center; z-index: 10000; flex-direction: column;
+    .section h2 {
+      color: #ffcc00; margin-bottom: 20px; font-size: 2rem;
     }
-    .spinner {
-      border: 5px solid rgba(255,255,255,0.2);
-      border-top: 5px solid #ffcc00;
-      border-radius: 50%; width: 60px; height: 60px;
-      animation: spin 1s linear infinite; margin-bottom: 20px;
+    .section p {
+      max-width: 800px; margin: 0 auto 25px auto; line-height: 1.6; color: #ddd;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes fadeIn { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
-    .seo-article { display: none; visibility: hidden; }
-
-    @media (max-width: 768px) {
-      .hero { padding: 0 10px; justify-content: center; }
-      .cookie-banner { bottom: 30px; padding: 25px 20px 15px 20px; max-width: 95%; }
-      .close-btn { top: 8px; right: 10px; width: 20px; height: 20px; font-size: 0.8rem; }
-      .cookie-banner button#acceptCookies { padding: 12px 28px; }
+    .proof-placeholder {
+      border: 2px dashed #ffcc00; border-radius: 12px;
+      margin: 40px auto; padding: 30px; max-width: 600px;
+      color: #ffcc00; font-weight: bold;
+    }
+    footer {
+      background: #111; padding: 25px; text-align: center;
+      font-size: 0.9rem; color: #999;
     }
   </style>
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <h1>Unleash Your Jump Power with Vert Shock</h1>
-  <p>Discover the revolutionary 8-week system that increases your vertical jump by up to 9 inches — no weights, no gym, just results.</p>
-  <h2><span class="old-price">$300</span> only <span class="new-price">$67</span> today!</h2>
-</section>
+  <section class="hero">
+    <h1>Unleash Your Jump Power — No Weights, No Limits</h1>
+    <p>The #1 vertical jump program trusted by over 20,000 athletes. Explosive gains in just 8 weeks — 100% science-based.</p>
+    <a href="https://af05bpretl5x9l03g5na1il5wq.hop.clickbank.net/?cbpage=checkout" target="_blank">
+      <button class="cta-btn">Watch the Free Training</button>
+    </a>
+  </section>
 
-<!-- COOKIE CONSENT -->
-<div class="cookie-banner" id="cookieBanner">
-  <button class="close-btn" id="closeBanner" aria-label="Close cookie consent banner">✕</button>
-  <p>We use cookies to give you the best experience. Continue to learn how Vert Shock helps athletes dominate their game.</p>
-  <button id="acceptCookies">Continue</button>
-</div>
+  <section class="section">
+    <h2>What Makes Vert Shock Different?</h2>
+    <p>Unlike traditional strength workouts, Vert Shock targets your fast-twitch fibers — the real key to jumping higher. No gym. No heavy lifting. Just explosive results backed by sports science.</p>
+    <p>Used by athletes in the NBA, college leagues, and around the world to build real jump power and confidence on the court.</p>
+  </section>
 
-<!-- LOADING OVERLAY -->
-<div class="loading-overlay" id="loadingOverlay">
-  <div class="spinner"></div>
-  <p>Loading... Please wait</p>
-</div>
+  <section class="section">
+    <h2>Real Results. Real People.</h2>
+    <div class="proof-placeholder">
+      [ ADD YOUR SOCIAL PROOF IMAGES HERE ]
+    </div>
+  </section>
 
-<!-- INVISIBLE SEO ARTICLE -->
-<div class="seo-article">
-  <h2>Vert Shock: The Ultimate Vertical Jump Training System</h2>
-  <p>Vert Shock is a proven plyometric-based program designed to help athletes increase their vertical jump without lifting heavy weights...</p>
-</div>
+  <section class="section">
+    <h2>Ready to Join?</h2>
+    <p>Thousands of players are already transforming their game. Don’t get left behind — your moment starts now.</p>
+    <a href="https://af05bpretl5x9l03g5na1il5wq.hop.clickbank.net/?cbpage=checkout" target="_blank">
+      <button class="cta-btn">Start Now for $67</button>
+    </a>
+  </section>
 
-<!-- SCRIPT -->
-<script>
-  const affiliateLink = "https://d71c9fsbnt9nat69f0o5scu5u3.hop.clickbank.net";
-  const cookieBanner = document.getElementById('cookieBanner');
-  const loadingOverlay = document.getElementById('loadingOverlay');
-
-  // Show banner after 3 seconds
-  setTimeout(() => { cookieBanner.style.display = 'block'; }, 3000);
-
-  // Lead event + redirect
-  document.getElementById('acceptCookies').addEventListener('click', () => {
-    fbq('track', 'Lead'); // <-- Meta Pixel Lead event
-    loadingOverlay.style.display = 'flex';
-    setTimeout(() => { window.location.href = affiliateLink; }, 1000);
-  });
-
-  // Close banner
-  document.getElementById('closeBanner').addEventListener('click', () => {
-    cookieBanner.style.display = 'none';
-  });
-</script>
+  <footer>
+    © 2025 Vert Shock Affiliate Page | This site is not affiliated with the NBA or Facebook.
+  </footer>
 
 </body>
 </html>
